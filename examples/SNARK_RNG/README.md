@@ -1,17 +1,12 @@
 # ZoKrates SNARK RNG → Solidity Verifier (Ganache + Truffle) — WSL (Works End‑to‑End)
 
-This README is the _exact_ workflow we ran in WSL to:
+This README is the _exact_ workflow we run in WSL to:
 
 1. generate a ZoKrates Groth16 proof (`proof.json`)
 2. export a Solidity verifier (`verifier.sol`)
 3. deploy the verifier on a local chain (Ganache)
 4. verify the proof in Truffle console
 5. show that _changing public inputs (“cheat”)_ makes verification fail
-
-It also includes fixes for the two common gotchas we hit:
-
-- Truffle connecting to the wrong port / network id mismatch
-- `verifyTx` signature mismatch (2 params vs 4 params)
 
 ---
 
@@ -56,7 +51,7 @@ truffle version
 Go to your folder:
 
 ```bash
-cd /SNARK_RNG
+cd <path_to_folder>/examples/SNARK_RNG
 ```
 
 ### 3.1 Compile and setup
