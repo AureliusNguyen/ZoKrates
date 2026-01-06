@@ -1,0 +1,35 @@
+{
+  "inputs": [
+    {
+      "name": "preimage",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 16,
+        "type": "u32"
+      }
+    },
+    {
+      "name": "bitNum",
+      "public": true,
+      "type": "u32"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": [
+        {
+          "type": "array",
+          "components": {
+            "size": 8,
+            "type": "u32"
+          }
+        },
+        {
+          "type": "bool"
+        }
+      ]
+    }
+  }
+}
