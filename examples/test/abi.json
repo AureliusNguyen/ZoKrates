@@ -1,0 +1,15 @@
+{
+  "inputs": [
+    {
+      "name": "a",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
+}
